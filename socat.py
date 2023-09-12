@@ -54,7 +54,7 @@ def socat_port():
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('-r', '--range', help='监听网段范围，例如：192.168.1.0/24')
-    parser.add_argument('-b', '--bind', help='绑定监听地址，例如：192.168.1.1:8000')
+    parser.add_argument('-b', '--bind', help='绑定监听地址，例如：192.168.1.1')
     parser.add_argument('-p', '--protocol', default='all', help='[all | tcp | udp]')
     parser.add_argument('positional', nargs='*',
                         help='<add | del | list> <本地端口> <远程地址>，例如：add 8000 192.168.1.2:8080')
